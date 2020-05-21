@@ -15,4 +15,4 @@ def create_to_excel(wbname, data, sheetname='Sheet1', ):
     print("保存工作薄%s成功......." % (wbname))
 if __name__ == '__main__':
     data=data.demo()
-    create_to_excel('D:\\excel2.xlsx',data,'数据处理')
+    create_to_excel('D:\\excel2.xlsx',data,'矩阵')
