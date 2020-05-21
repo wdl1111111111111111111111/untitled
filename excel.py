@@ -10,7 +10,7 @@ def create_to_excel(wbname, data, sheetname='Sheet1', ):
     print("正在写入数据........")
     for row, item in enumerate(data):  # data发现有4行数据， item里面有三列数据;
         for column, cellValue in enumerate(item):
-            cell = sheet.cell( column=column + 1,row=row + 1, value=cellValue)
+            cell = sheet.cell( column=row + 1,row=column + 1, value=cellValue)
     wb.save(wbname)
     print("保存工作薄%s成功......." % (wbname))
 if __name__ == '__main__':
